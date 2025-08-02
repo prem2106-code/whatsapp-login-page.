@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 1</title>
+    <style>
+        
+body {
+  background-image: url('image2.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 800px;
+  max-width: 90%;
+}
+
+.box {
+  flex: 1;
+  padding: 30px;
+}
+
+.qr-login {
+  background-color: #f0f0f0;
+  border-right: 1px solid #ffffff;
+}
+
+.qr-img {
+  margin-top: 20px;
+  width: 200px;
+  height: 200px;
+}
+
+.phone-login .form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+select, input {
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  background-color: #25d366;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1ebe5d;
+}
+
+a {
+  margin-top: 10px;
+  color: #128c7e;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box qr-login">
+      <h2>Use WhatsApp on your computer</h2>
+      <p>1. Open WhatsApp on your phone<br>
+         2. Tap Menu or Settings and select Linked Devices<br>
+         3. Point your phone to this screen to capture the code
+      </p>
+      <img src="image1.png" alt="QR Code" class="qr-img">
+    </div>
+    
+    <div class="box phone-login">
+      <h2>Enter phone number</h2>
+      <p>Select a country and enter your WhatsApp phone number.</p>
+      <div class="form">
+        <select>
+          <option>+91 India</option>
+          <option>+1 USA</option>
+          <option>+44 UK</option>
+        </select>
+        <input type="tel" placeholder="Enter phone number" />
+        <button>Next</button>
+        <a href="#">Link with QR code</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
